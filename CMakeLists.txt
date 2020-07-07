@@ -596,7 +596,7 @@ else()
 endif()
 
 # macOS ships with liblzma.dylib but no headers, so check for the headers too
-find_package(LibLZMA)
+find_package(liblzma)
 check_include_file(lzma.h HAVE_LZMA_H)
 if(LIBLZMA_FOUND AND HAVE_LZMA_H)
   message(STATUS "Using shared lzma")
